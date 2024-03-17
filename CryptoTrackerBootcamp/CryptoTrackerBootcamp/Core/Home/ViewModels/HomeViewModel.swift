@@ -12,6 +12,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
+    @Published var statistics: [StatisticModel] = []
     
     @Published var searchText: String = ""
     
@@ -21,6 +22,13 @@ class HomeViewModel: ObservableObject {
     
     init() {
         addSubscribers()
+        
+        statistics.append(contentsOf: [
+            DeveloperPreview.shared.statistic,
+            DeveloperPreview.shared.statistic,
+            DeveloperPreview.shared.statistic,
+            DeveloperPreview.shared.statistic,
+        ])
     }
     
     func addSubscribers() {
