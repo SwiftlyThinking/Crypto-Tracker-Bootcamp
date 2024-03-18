@@ -42,6 +42,9 @@ struct HomeView: View {
             PortfolioView()
                 .environmentObject(vm)
         }
+        .navigationDestination(for: CoinModel.self) { coin in
+            DetailView(coin: coin)
+        }
     }
 }
 
@@ -97,6 +100,10 @@ extension HomeView {
                         leading: 0,
                         bottom: 10,
                         trailing: 10))
+                    .overlay {
+                        NavigationLink("", value: coin)
+                            .opacity(0)
+                    }
             }
         }
         .listStyle(.plain)
@@ -112,10 +119,15 @@ extension HomeView {
                         leading: 0,
                         bottom: 10,
                         trailing: 10))
+                    .overlay {
+                        NavigationLink("", value: coin)
+                            .opacity(0)
+                    }
             }
         }
         .listStyle(.plain)
         .transition(.move(edge: .trailing))
+        .buttonStyle(.plain)
     }
     
     private var columnTitles: some View {
