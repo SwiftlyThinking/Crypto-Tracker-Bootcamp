@@ -9,15 +9,14 @@ import SwiftUI
 
 struct DetailView: View {
     
-    let coin: CoinModel
+    @StateObject var vm: DetailViewModel
     
     init(coin: CoinModel) {
-        self.coin = coin
-        print("Initializing Detail View for \(coin.name)")
+        _vm = StateObject(wrappedValue: DetailViewModel(coin: coin))
     }
     
     var body: some View {
-        Text(coin.name)
+        Text(vm.coinDetails?.hashingAlgorithm ?? "")
     }
 }
 
