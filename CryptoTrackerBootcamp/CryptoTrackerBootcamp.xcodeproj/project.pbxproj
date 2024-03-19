@@ -26,6 +26,7 @@
 		078045682BA9DC3300C15153 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078045672BA9DC3300C15153 /* ChartView.swift */; };
 		0780456A2BA9E2B100C15153 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078045692BA9E2B100C15153 /* Date.swift */; };
 		0780456C2BA9EE2000C15153 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0780456B2BA9EE2000C15153 /* String.swift */; };
+		078045722BA9F1FC00C15153 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078045712BA9F1FC00C15153 /* SettingsView.swift */; };
 		079685A72BA703A500B9E680 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079685A62BA703A500B9E680 /* StatisticModel.swift */; };
 		079685A92BA704FB00B9E680 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079685A82BA704FB00B9E680 /* StatisticView.swift */; };
 		079685AB2BA7074E00B9E680 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079685AA2BA7074E00B9E680 /* HomeStatsView.swift */; };
@@ -65,6 +66,7 @@
 		078045672BA9DC3300C15153 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		078045692BA9E2B100C15153 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0780456B2BA9EE2000C15153 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		078045712BA9F1FC00C15153 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		079685A62BA703A500B9E680 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		079685A82BA704FB00B9E680 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		079685AA2BA7074E00B9E680 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				0716BAA12BA33F00001F593C /* Components */,
 				0716BA9C2BA33E0A001F593C /* Home */,
 				077887DE2BA8808800BDE1CA /* Detail */,
+				0780456D2BA9F1C200C15153 /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -208,6 +211,22 @@
 			children = (
 				077887E12BA880E900BDE1CA /* DetailView.swift */,
 				078045672BA9DC3300C15153 /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0780456D2BA9F1C200C15153 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0780456E2BA9F1D100C15153 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0780456E2BA9F1D100C15153 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				078045712BA9F1FC00C15153 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078045722BA9F1FC00C15153 /* SettingsView.swift in Sources */,
 				079685B32BA714E200B9E680 /* XMarkButtonView.swift in Sources */,
 				0767354E2BA4A87100FDDD85 /* CoinRowView.swift in Sources */,
 				079685B52BA7161000B9E680 /* CoinLogoView.swift in Sources */,
